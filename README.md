@@ -1,5 +1,7 @@
 # KryptoVote
 An online voting system using the ethereum blockchain technology
+
+
 Part 1: Running the system on localhost:
 
 Step 1:
