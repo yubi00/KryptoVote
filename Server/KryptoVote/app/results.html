@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Election Result</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  
+</head>
+<body class="container" background=".\app\back.png" >
+    <!-- <div><img src="./app/a.jpg" alt="some_text" width="150" height="150"></div> -->
+
+  <h1>Results for Election</h1>
+  <div id="address"></div>
+  <div class="table-responsive">
+    <table class="table table-bordered" id="customFields">
+      <thead>
+        <tr>
+          <th>Candidate</th>
+          <th>Votes</th>
+        </tr>
+      </thead>
+      <!-- <tbody>
+        <tr>
+          <td>Zerome</td>
+          <td id="candidate-1"></td>
+        </tr>
+        <tr>
+          <td>Yubi</td>
+          <td id="candidate-2"></td>
+        </tr>
+        <tr>
+          <td>Nagen</td>
+          <td id="candidate-3"></td>
+        </tr>
+      </tbody> -->
+      <!-- <tbody style="font-size:20px;text-align:center;line-height:20px;">
+        <tr>
+      <td style="background-color:#f08080;color:white;margin-top:5px;"><style type="text/css">input { border: none;width:300px;margin-top:10px; }</style><label for="customFieldName" style="width:300px; margin-top:17px;"> '+candidate+' </label> &nbsp;</td>
+      <td style="background-color:#f08080;color:white;width:10px;"><input type="radio"  name="candidate" value='+candidate+' ></td>
+      style="text-align:center;margin-top:30px;margin-left:45px;width=5px;" 
+      <td><img src="./img/'+partySymbol+' " alt="" height=40 width=40></img></td></tr>
+      </tbody> -->
+    </table>
+ 
+  </div>
+  <a href="#" onclick="piechartdisplay()" id = "chartdisplay" class="btn btn-primary">Click to display piechart</a>  
+
+   <script type="text/javascript">
+     //google.charts.load('current', {packages: ['corechart']}); 
+     google.charts.load("current", {packages:["corechart"]});   
+   </script>
+<div id="piechart" ></div>
+
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+<script src="app1.js"></script>
+</html>

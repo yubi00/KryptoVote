@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Election Ballot</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<style>
+  h4{
+    background-color:#2e2e1f;
+	padding:15px;
+	text-align:center;
+	color:white;
+	font-size:20px;
+	font-weight:bold;
+	}
+  
+  </style>
+<body class="container" background=".\app\back.png">
+  <h1>Online Election Ballot</h1>
+  <h4>WELCOME TO KRYPTO ONLINE VOTING:<br><br>Latrobe University,2017 september 2018<br><br>
+<u>INSTRUCTION:</u><br><br><p>1.Place a cross in the box next to CDN's name at the top of the form overleaf
+<br>
+2.Place a mark or tick on checkbox for related position and party symbols </p></h4>
+  <div id="address"></div>
+  <div class="table-responsive">
+      <table class="table table-striped table-bordered" id="customFields">
+      <thead>
+        <tr>
+          <th>Candidate</th>
+          <th>Votes</th>
+        </tr>
+      </thead>
+      <!-- <tbody>
+      </tbody> -->
+    </table> 
+
+</table>
+
+	<div id="votingendtime"></div>
+	
+    <div id="msg"></div>
+  </div>
+  <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a>
+  <a href="results.html" class="btn btn-primary">Results</a>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="ballot.js"></script>
+</html>
